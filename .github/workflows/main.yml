@@ -1,0 +1,23 @@
+name: ic_java_05012023
+on: 
+ push:
+    branches: [ "master" ]
+
+ pull_request:  
+    branches: [ master] 
+jobs:
+    master_java:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        
+        - run: |
+           echo "Paso1__________________________10012023"
+           mkdir -p path/to/artifact
+           pwd
+           ls
+          
+
+
+       
+  
